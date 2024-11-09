@@ -63,7 +63,8 @@ After data collection, you will have a `driving_log.csv` file, which contains in
 <br>
 <br>
 
-### Data Preprocessing (for Manual Data Collection Only)
+### Data Preprocessing
+For Manual Data Collection Only.
 
 Follow [**Data Preprocessing**](DataPreprocessing.md)
 
