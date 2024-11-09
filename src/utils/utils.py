@@ -72,3 +72,30 @@ def clean_path(path, project_folder):
     start_index = path.find(project_folder)
     return path[start_index+len(project_folder):] if start_index != -1 else path
 
+def batch_generator(X_train, y_train, batch_size):
+    num_samples = len(X_train)
+    while True:
+        for offset in range(0, num_samples, batch_size):
+            batch_X_paths = X_train[offset:offset + batch_size]
+            batch_y = y_train[offset:offset + batch_size]
+
+            batch_images = []
+            batch_labels = []
+
+            for img_path, label in zip(batch_X_paths, batch_y):
+                img_path = img_path[0]
+                image = cv2.imread(img_path)
+                
+                if image is None:
+                    print(f"Warning: Image at {img_path} could not be read.")
+                    continue
+                
+                image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+                batch_images.append(image)
+                batch_labels.append(label)
+
+            batch_images = np.array(batch_images)
+            batch_labels = np.array(batch_labels)
+
+            yield batch_images, batch_labels
