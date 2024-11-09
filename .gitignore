@@ -162,5 +162,5 @@ cython_debug/
 .idea/
 
 # Data
-data/procesed/*
+data/processed/*
 data/raw/*
