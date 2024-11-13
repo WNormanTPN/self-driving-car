@@ -1,6 +1,10 @@
 # Data Preprocessing (for Manual Data Collection Only)
 
+## Table of Contents
+1. **[Explanation](#explanation)**
+2. **[Usage](#usage)**
 
+## Explanation
 - Original images from the car cameras are **320x160** pixels.
 
 <div align="center">
@@ -65,3 +69,25 @@ This process helps **avoid overfitting**, ensuring that the model generalizes we
 <div align="center">
     <img src="images/12.png" width="200" height="66" />
 </div>
+
+<br>
+<br>
+
+## Usage
+
+- Set input and output directories in `preprocessing.py` like below:
+```python
+# Path to unprocessed driving_log.csv
+input_csv = 'data/raw/track1/driving_log.csv'
+
+# Path to save processed data
+output_csv = 'data/processed/track1/driving_log.csv'
+
+# Path to save processed images
+output_dir = 'data/processed/track1/IMG'
+```
+
+- Run `preprocessing.py`:
+```bash
+python preprocessing.py
+```
