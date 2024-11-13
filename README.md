@@ -16,9 +16,6 @@
    - [Data Preprocessing](#data-preprocessing)
 4. [Model Architecture](#model-architecture)
 5. [Usage](#usage)
-   - [Setup Environment](#setup-environment)
-   - [Autonomous Run](#autonomous-run)
-   - [Image to Video Conversion](#image-to-video-conversion)
 
 <br>
 <br>
@@ -102,6 +99,20 @@ source .venv/bin/activate  # On Windows use .venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+<br>
+
+### Training Model
+
+- Set `data_dir` in `training.py` to folder holding both preprocessed `driving_log.csv` and `IMG`. For example:
+```python
+data_dir = 'data/processed/track1'
+```
+
+- Run training.py:
+```bash
+python training.py
+```
+
 <br>
 
 ### Autonomous Run
