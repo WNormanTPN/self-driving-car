@@ -12,7 +12,7 @@
 2. [Prerequisites](#prerequisites)
 3. [Data Preparation](#data-preparation)
    - [Manual Data Collection](#manual-data-collection)
-   - [Download Pre-recorded Data](#download-pre-recorded-data)
+   - [Download Pre-recorded Data](#download-pre-recorded-and-preprocessed-data)
    - [Data Preprocessing](#data-preprocessing)
 4. [Model Architecture](#model-architecture)
 5. [Usage](#usage)
@@ -55,8 +55,8 @@ This deep learning model uses Convolutional Neural Networks (CNN) to predict ste
 2. Click on **Record**, choose a folder to save the data, and drive the car for about **10 minutes**.
    - Driving for 10 minutes will yield around **18,000 images** (6,000 images from each camera).
 
-### Download Pre-recorded Data:
-- **[Coming Soon]**
+### Download Pre-recorded and Preprocessed Data:
+- Download **[here](https://drive.google.com/file/d/1j_R7mMiCiJPX6AzYwIgvvykyzA_wl96B/view?usp=sharing)**.
 
 <br>
 
