@@ -8,14 +8,14 @@
 <br>
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Data Preparation](#data-preparation)
-   - [Manual Data Collection](#manual-data-collection)
-   - [Download Pre-recorded Data](#download-pre-recorded-and-preprocessed-data)
-   - [Data Preprocessing](#data-preprocessing)
-4. [Model Architecture](#model-architecture)
-5. [Usage](#usage)
+1. **[Introduction](#introduction)**
+2. **[Prerequisites](#prerequisites)**
+3. **[Data Preparation](#data-preparation)**
+   - **[Manual Data Collection](#manual-data-collection)**
+   - **[Download Pre-recorded Data](#download-pre-recorded-and-preprocessed-data)**
+   - **[Data Preprocessing](#data-preprocessing)**
+4. **[Model Architecture](#model-architecture)**
+5. **[Usage](#usage)**
 
 <br>
 <br>
