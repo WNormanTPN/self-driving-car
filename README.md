@@ -1,6 +1,7 @@
 <div align="center">
     <h1 align="center">🚗 Self-Driving Car Project 🚗</h1>
-    <img src="images/1.png" width="500" />
+
+![Demo GIF](images/run1.gif)
 </div>
 
 <br>
@@ -15,11 +16,18 @@
    - [Data Preprocessing](#data-preprocessing)
 4. [Model Architecture](#model-architecture)
 5. [Usage](#usage)
+   - [Setup Environment](#setup-environment)
+   - [Autonomous Run](#autonomous-run)
+   - [Image to Video Conversion](#image-to-video-conversion)
 
 <br>
 <br>
 
 ## Introduction
+
+<div align="center">
+    <img src="images/1.png" width="700" />
+</div>
 
 This deep learning model uses Convolutional Neural Networks (CNN) to predict steering angles and speed for the self-driving car simulation: [Udacity Self-Driving Car Simulator](https://github.com/udacity/self-driving-car-sim). The model takes input from the car's 3 cameras (left, center, and right) and makes predictions for the car's movement.
 
@@ -82,6 +90,42 @@ Follow [**Data Preprocessing**](DataPreprocessing.md)
 
 ## Usage
 
-### [Coming Soon]
+### Setup Environment
+
+- Create a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows use .venv\Scripts\activate
+```
+
+- Install required packages from `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
+<br>
+
+### Autonomous Run
 
 Once the model is trained, you can use it to predict the car's movements based on the camera input in the simulator.
+
+- First, launch the Simulator App and select Autonomous mode; at this point, the car will remain stationary.
+
+- Next, run the following command to connect to the Simulator (without recording):
+```bash
+python main.py <model path>
+```
+
+Or (with recording enabled):
+```bash
+python main.py <model path> <image folder>
+```
+
+<br>
+
+### Image to Video Conversion
+
+- To convert the captured images into a video, run the following command:
+```bash
+python video.py <image folder> [--fps]
+```
+The `--fps` argument defaults to 60 if not specified.
